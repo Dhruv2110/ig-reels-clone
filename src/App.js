@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import logo from './IG_logo.svg'
+import VideoCard from './VideoCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>IG-Reels-Clone 🚀 </h1>
+
+      <div className="App__top">
+        <img
+          className="App__logo"
+          src={logo}
+          alt="IG_Logo"
+        />
+        <h1>Reels</h1>
+      </div>
+
+      <div className="App__videos">
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+      </div>
     </div>
   );
 }
